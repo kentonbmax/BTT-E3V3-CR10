@@ -1506,11 +1506,11 @@
 #if HAS_DISPLAY && EITHER(SDSUPPORT, SET_PROGRESS_MANUALLY)
   #define SHOW_PROGRESS_PERCENT           // Show print progress percentage (doesn't affect progress bar)
   #define SHOW_ELAPSED_TIME               // Display elapsed printing time (prefix 'E')
-  //#define SHOW_REMAINING_TIME           // Display estimated time to completion (prefix 'R')
+  #define SHOW_REMAINING_TIME           // Display estimated time to completion (prefix 'R')
   #if ENABLED(SET_INTERACTION_TIME)
     #define SHOW_INTERACTION_TIME         // Display time until next user interaction ('C' = filament change)
   #endif
-  //#define PRINT_PROGRESS_SHOW_DECIMALS  // Show/report progress with decimal digits, not all UIs support this
+  #define PRINT_PROGRESS_SHOW_DECIMALS  // Show/report progress with decimal digits, not all UIs support this
 
   #if EITHER(HAS_MARLINUI_HD44780, IS_TFTGLCD_PANEL)
     //#define LCD_PROGRESS_BAR            // Show a progress bar on HD44780 LCDs for SD printing
@@ -1577,7 +1577,7 @@
    * an option on the LCD screen to continue the print from the last-known
    * point in the file.
    */
-  #define POWER_LOSS_RECOVERY
+  //#define POWER_LOSS_RECOVERY
   #if ENABLED(POWER_LOSS_RECOVERY)
     #define PLR_ENABLED_DEFAULT   false // Power Loss Recovery enabled by default. (Set with 'M413 Sn' & M500)
     //#define BACKUP_POWER_SUPPLY       // Backup power / UPS to move the steppers on power loss
@@ -3223,7 +3223,7 @@
    * Enable M122 debugging command for TMC stepper drivers.
    * M122 S0/1 will enable continuous reporting.
    */
-  #define TMC_DEBUG
+  //#define TMC_DEBUG
 
   /**
    * You can set your own advanced settings by filling in predefined functions.
