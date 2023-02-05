@@ -1,1 +1,1 @@
-# BTT-E3V3-CR10
+# Bigtree SKR Mini E3V3 for CR10v1
